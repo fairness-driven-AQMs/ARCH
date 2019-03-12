@@ -1,0 +1,10 @@
+Please follow the following instruction for using this protocol.
+This code is for Network Simulator 2 (NS2) only.
+The repository has three files named as ARCH.cc, ARCH.h and ns-default.tcl.
+In order to use this protocol, certain changes are required in NS2.
+In folder nsallinone-2.35/ns-2.35/queue/, replace the already existing red.cc and red.h files with ARCH.cc and ARCH.h.
+In folder nsallinone-2.35/ns-2.35/tcl/lib/, replace the already existing ns-default.tcl file with the one provided here.
+The purpose of replacing the header and tcl files is that some changes (new variables) have been made in these files required for ARCH technique.
+After making the changes given above, complie your NS-2 by giving the make command from the command line. 
+After the susscessful compliation, the ARCH is ready to use.
+If the code does not execute, try renaming the files ARCH.cc to red.cc and ARCH.h to red.h (after deleting original red.cc and red.h in nsallinone-2.35/ns-2.35/queue/ directory) and then compile NS2. Your code must execute now.
