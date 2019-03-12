@@ -1,1 +1,1 @@
-# ARCH
+# ARCH is an Active Queue Management (AQM) scheme which implements fairness among heterogenous flows passing through the network routers. It ensures that bandwidth is shared fairly by taking punitive actions against aggressive flows. It is based upon RED algortihm and adjust its dropping rate as per level of congestion in the routers adaptively switching between stateless and partial-state modes. Under the less congested networks, the drop rate is minimal, however, as the congestion level increases ARCH increase its drop rate to prevent sevre congestion.
